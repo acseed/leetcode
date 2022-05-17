@@ -43,5 +43,5 @@ fn test() {
     let words = vec!["".to_string(), "apple".to_string()];
     let order = "abcdefghijklmnopqrstuvwxyz".to_string();
     let result = Solution::is_alien_sorted(words, order);
-    println!("{}", result);
+    assert_eq!(result, true);
 }
