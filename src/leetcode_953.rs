@@ -1,5 +1,6 @@
 use std::cmp::Ordering;
 use std::collections::HashMap;
+use std::ops::Index;
 
 struct Solution;
 
@@ -33,15 +34,15 @@ impl Solution {
                 },
             }
         }
-        return a.len().cmp(&b.len());
+        a.len().cmp(&b.len())
     }
 
 }
 
 #[test]
 fn test() {
-    let words = vec!["".to_string(), "apple".to_string()];
-    let order = "abcdefghijklmnopqrstuvwxyz".to_string();
+    let words = vec!["hello".to_string(), "leetcode".to_string()];
+    let order = "hlabcdefgijkmnopqrstuvwxyz".to_string();
     let result = Solution::is_alien_sorted(words, order);
     assert_eq!(result, true);
 }
