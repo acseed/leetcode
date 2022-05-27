@@ -7,6 +7,7 @@ mod leetcode_4;
 mod leetcode_5;
 mod leetcode_17_11;
 mod leetcode_6;
+mod leetcode_2;
 
 fn main() {
     println!("Hello, world!");
