@@ -41,7 +41,7 @@ impl Solution {
         let mut n1 = &node1.next;
         let mut n2 = &node2.next;
         loop {
-            match (&mut n1, &mut n2) {
+            match (n1, n2) {
                 (Some(node1), Some(node2)) => {
                     sum = node1.val + node2.val + carry;
                     carry = sum / 10;
